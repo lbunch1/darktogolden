@@ -39,10 +39,13 @@ export default function(props: any) {
             </A>
           </Show>
         </div>
-        <details>
-          <summary><h3>Chapters</h3></summary>
-          <Contents />
-        </details>
+        <div class="mobile-chapters">
+          <hr />
+          <details>
+            <summary><h3>Chapters</h3></summary>
+            <Contents />
+          </details>
+        </div>
       </section>
     </div>
   )

@@ -186,6 +186,11 @@ img {
   height: 2rem;
 }
 
+.list-style-none * {
+  list-style: none;
+  text-align: left;
+}
+
 @media (min-width: 480px) {
   section {
     max-width: 75ch;

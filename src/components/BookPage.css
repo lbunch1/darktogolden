@@ -3,7 +3,7 @@
   display: none;
 }
 
-details {
+.mobile-chapters {
   margin: 1rem;
 }
 
@@ -16,16 +16,25 @@ summary > h3 {
 .prev-next {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .prev-next > * {
   padding: 2rem;
-  flex-grow: 1;
 }
 
 .prev, .next {
   border: solid 3px var(--accent-dim);
-  border-radius: 16px;
+  margin: 0;
+}
+
+.prev {
+  border-radius: 16px 0 0 16px;
+}
+
+.next {
+  border-radius: 0 16px 16px 0;
 }
 
 .prev:hover, .next:hover {
@@ -49,7 +58,7 @@ summary > h3 {
     gap: 2rem;
     justify-content: center;
   }
-  details {
+  .mobile-chapters {
     display: none;
   }
   .aside-contents {
