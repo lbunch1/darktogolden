@@ -13,7 +13,6 @@ export default defineConfig({
       enforce: "pre",
     },
     solid({
-
       adapter: vercel({}),
       extensions: [".mdx", ".md"],
     }),
