@@ -9,18 +9,18 @@ import { bars, xMark, lightIcon, darkIcon } from "./icons";
 
 export default function({ home }: Object) {
 
-  const htmlElement = document.querySelector("html")
   const [showMenu, setShowMenu] = createSignal(false);
   const [lightMode, setLightMode] = createSignal(true);
 
   function toggleTheme(theme: String) {
+    const htmlElement = document.querySelector("html")
 
     if (theme === "dark") {
-      htmlElement?.setAttribute("data-theme", "dark");
+      htmlElement.setAttribute("data-theme", "dark");
       setLightMode(false);
       window.localStorage.setItem("theme", "dark");
     } else if (theme === "light") {
-      htmlElement?.setAttribute("data-theme", "light")
+      htmlElement.setAttribute("data-theme", "light")
       setLightMode(true);
       window.localStorage.setItem("theme", "light");
     }
