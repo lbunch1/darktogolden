@@ -105,5 +105,15 @@ export const chapters = [
     chapter: "15",
     title: "The Golden Years",
     path: "/book/the-golden-years"
+  },
+  {
+    chapter: null,
+    title: "Birth and Death Dates",
+    path: "/book/birth-and-death-dates"
+  },
+  {
+    chapter: null,
+    title: "About the Author",
+    path: "/book/about-the-author"
   }
 ]
