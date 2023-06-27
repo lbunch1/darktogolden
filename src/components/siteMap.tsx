@@ -83,8 +83,8 @@ export const chapters = [
   },
   {
     chapter: "11",
-    title: "5614 Michigan Ave",
-    path: "5614-michigan-ave"
+    title: "5614 Michigan Avenue",
+    path: "/book/5614-michigan-avenue"
   },
   {
     chapter: "12",
