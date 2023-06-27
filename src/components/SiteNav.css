@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 nav > ul {
   display: flex;
   flex-direction: column;
@@ -52,6 +54,10 @@ button.icon:hover {
 .close-nav {
   margin: 1rem;
   transform: scale(1.2);
+}
+
+.title-text {
+  font-family: 'Tangerine', cursive;
 }
 
 @media (min-width: 480px) {

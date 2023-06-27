@@ -41,7 +41,7 @@ export default function({ home }: Object) {
 
       <div class="nav-wrapper">
         <button class="icon open-nav" onClick={() => setShowMenu(!showMenu())} >{bars}</button>
-        <A href="/"><h3>From the Dark Years<br />to the Golden Years</h3></A>
+        <A href="/"><h3 class="title-text">From the Dark Years<br />to the Golden Years</h3></A>
         <nav classList={{ show: showMenu() }}>
           <button class="icon close-nav" onClick={() => setShowMenu(!showMenu())} >{xMark}</button>
           <ul onClick={() => setShowMenu(!showMenu())}>
