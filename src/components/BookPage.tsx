@@ -2,6 +2,7 @@ import Contents from "./Contents";
 import { Show, children } from "solid-js";
 import { A } from "solid-start";
 import { chapters } from "./siteMap";
+import { leftChev, rightChev } from "./chevrons";
 
 import "./BookPage.css";
 
@@ -30,12 +31,22 @@ export default function(props: any) {
           </Show>
           <Show when={previousPage}>
             <A href={previousPage.path} class="prev">
-              {previousPage.chapter ? "Ch." + previousPage.chapter + " - " : null}{previousPage.title}
+              <div>
+                {leftChev}
+              </div>
+              <div class="margin-auto">
+                {previousPage.chapter ? "Ch." + previousPage.chapter + " - " : null}{previousPage.title}
+              </div>
             </A>
           </Show>
           <Show when={nextPage}>
             <A href={nextPage.path} class="next">
-              {nextPage.chapter ? "Ch." + nextPage.chapter + " - " : null}{nextPage.title}
+              <div class="margin-auto">
+                {nextPage.chapter ? "Ch." + nextPage.chapter + " - " : null}{nextPage.title}
+              </div>
+              <div>
+                {rightChev}
+              </div>
             </A>
           </Show>
         </div>

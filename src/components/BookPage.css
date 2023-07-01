@@ -25,8 +25,12 @@ summary > h3 {
 }
 
 .prev, .next {
+  display: flex;
   border: solid 3px var(--accent-dim);
   margin: 0;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .prev {
@@ -37,18 +41,16 @@ summary > h3 {
   border-radius: 0 16px 16px 0;
 }
 
-.prev:hover, .next:hover {
+.chevron {
+  height: 3rem;
+  color: var(--accent-dim);
+}
+
+.prev:hover, .next:hover  {
   background-color: var(--accent-dim);
   color: var(--primary-bold);
 }
 
-.prev::before {
-  content: "< ";
-}
-
-.next::after {
-  content: " >";
-}
 
 @media (min-width: 85ch) {
   .book-page {
